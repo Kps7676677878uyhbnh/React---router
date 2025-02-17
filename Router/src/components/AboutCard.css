@@ -1,0 +1,67 @@
+.user-container {
+    width: 100%;
+    max-width: 320px; /* Ensures it doesn’t get too large */
+    background: #3e444bb2;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto; /* Centers it in the parent container */
+}
+
+/* Hover effect */
+.user-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Name styling */
+#user-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* User image */
+#user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+#user-desc {
+    font-size: 14px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Responsive grid layout for multiple cards */
+.user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .user-container {
+        max-width: 90%; /* Makes it more flexible on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #user-name {
+        font-size: 18px;
+    }
+
+    #user-desc {
+        font-size: 13px;
+    }
+}
